@@ -20,7 +20,9 @@ function createPhotoMap () {
   var map = L.map('map').setView([30.44, -91.187], 13);
 
 // Add OpenStreetMap to the map
-var basemapUrl = 'https://https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}';
+var basemapUrl = ''https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}', {
+	attribution: 'Tiles &copy; Esri &mdash; Source: Esri, i-cubed, USDA, USGS, AEX, GeoEye, Getmapping, Aerogrid, IGN, IGP, UPR-EGP, and the GIS User Community'
+});
 var basemap = L.tileLayer(basemapUrl).addTo(map);
 
   
