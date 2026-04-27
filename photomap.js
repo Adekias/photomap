@@ -14,7 +14,7 @@
  */
 function createPhotoMap () {
   // URL of a Google Sheets spreadsheet output as CSV
-  var csvUrl = 'https://docs.google.com/spreadsheets/d/e/2PACX-1vT7mbHYLhoqV6FOzX1UCsI1q0r8IoNgPIBXhDtpbVqfuYvWAFX0N0tyeD6iZWCUBRxtYz8RLgthGFBJ/pubhtml?gid=0&single=true';
+  var csvUrl = 'https://docs.google.com/spreadsheets/d/e/2PACX-1vT7mbHYLhoqV6FOzX1UCsI1q0r8IoNgPIBXhDtpbVqfuYvWAFX0N0tyeD6iZWCUBRxtYz8RLgthGFBJ/pub?gid=0&single=true&output=csv';
   
   // create map object with center lat/lon and zoom level
   var map = L.map('map').setView([30.44, -91.187], 13);
@@ -24,7 +24,7 @@ var Stadia_AlidadeSatellite = L.tileLayer('https://tiles.stadiamaps.com/tiles/al
 	maxZoom: 20,
 	attribution: '&copy; CNES, Distribution Airbus DS, © Airbus DS, © PlanetObserver (Contains Copernicus Data) | &copy; <a href="https://www.stadiamaps.com/" target="_blank">Stadia Maps</a> &copy; <a href="https://openmaptiles.org/" target="_blank">OpenMapTiles</a> &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
 	ext: 'jpg'
-});.addTo(map);
+}).addTo(map);
   
   // use Papa Parse (papaparse.com) to get the Google Sheets CSV
   Papa.parse(csvUrl, {
