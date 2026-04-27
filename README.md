@@ -1,4 +1,3 @@
 # Photomap
-A Leaflet map that reads data from Google Sheets.
-This is a Map of my favorite museums in Baton Rouge
+This is a map of my favorite museums in Baton Rouge with markers that display a description and a photo when clicked on. Usernames of individuals who uploaded these photos to Google Maps have been left in to give credit.
 https://adekias.github.io/photomap
